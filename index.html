@@ -74,49 +74,45 @@
                     <input type="text" class="form-control" id="postalCodeInput" placeholder="Postal Code">
                 </div>
             </div>
-            <div class="container">
-                <div class="row g-3 align-items-end">
-                    <!-- Credit Card Field Column -->
-                    <div class="col-md-6">
-                        <label class="form-label">Credit Card Type</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="creditCardType" id="visa" value="Visa">
-                            <label class="form-check-label" for="visa">Visa</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="creditCardType" id="mastercard"
-                                value="MasterCard">
-                            <label class="form-check-label" for="mastercard">MasterCard</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="creditCardType" id="amex"
-                                value="American Express">
-                            <label class="form-check-label" for="amex">American Express</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="creditCardType" id="discover"
-                                value="Discover">
-                            <label class="form-check-label" for="discover">Discover</label>
-                        </div>
-                    </div>
 
-                    <!-- Comment Box Column -->
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="amountInput" class="form-label">Message</label>
-                            <textarea class="form-control" id="commentBox" rows="5"
-                                placeholder="Enter your comments here"></textarea>
-                            <label for="commentBox" class="form-label">Add any notes here</label>
-                        </div>
-                    </div>
+            <div class="row g-3">
+                <!-- Credit Card Field Column -->
+                <div class="col-md-6">
+                    <p class="form-label mb-3">We Accept......</p>
+                    <form>
+                        <input class="form-check-input" type="radio" name="creditCardType" id="visa" value="Visa">
+                        <label class="form-check-label" for="visa">Visa</label>
+
+                        <input class="form-check-input" type="radio" name="creditCardType" id="mastercard"
+                            value="MasterCard">
+                        <label class="form-check-label" for="mastercard">MasterCard</label>
+
+                        <input class="form-check-input" type="radio" name="creditCardType" id="amex"
+                            value="American Express">
+                        <label class="form-check-label" for="amex">American Express</label>
+
+                        <input class="form-check-input" type="radio" name="creditCardType" id="discover"
+                            value="Discover">
+                        <label class="form-check-label" for="discover">Discover</label>
+                    </form>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 d-flex justify-content-end">
-                        <button type="button" class="btn btn-secondary me-2">Cancel</button>
-                        <button type="button" class="btn btn-primary">Send</button>
+                <!-- Comment Box Column -->
+                <div class="col-md-6 ">
+                    <div class="mb-3">
+                        <label for="amountInput" class="form-label">Message</label>
+                        <textarea class="form-control" id="commentBox" rows="5"
+                            placeholder="Enter your comments here"></textarea>
+                        <label for="commentBox" class="form-label">Add any notes here</label>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary me-2">Cancel</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+
         </div>
 
 
