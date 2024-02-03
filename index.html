@@ -11,110 +11,172 @@
     <style>
         .red-background {
             background-color: #ffcccc;
-            /* Adjusted red background */
+            color: red;
+            padding: 15px;
+            border-radius: 7px;
         }
+
+        .custom-row {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 98%;
+        }
+
+        /* Example: Limits the row's width to 90% of the container */
     </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <!-- Heading Row -->
-        <div class="row bg-light mb-3"> <!-- Applied bg-light to the entire row -->
-            <div class="col">
-                <h1>Payment Form Example</h1>
-            </div>
-        </div>
-        <!-- Red Background Row -->
-        <div class="row red-background mb-3"> <!-- Corrected class name to match the defined style -->
-            <div class="col">
-                <p>Some Fields are missing</p>
-            </div>
-        </div>
-        <div class="row g-3 mb-3">
-            <div class="col-md-5">
-                <label for="cardInput" class="form-label">Card #</label>
-                <input type="text" class="form-control" id="cityInput" aria-label="City">
-            </div>
-            <div class="col-md-3">
-                <label for="cvcInput" class="form-label">CVC #</label>
-                <input type="text" class="form-control" id="stateInput" aria-label="State">
-            </div>
-            <div class="col-md-4">
-                <label for="amountInput" class="form-label">Amount</label>
-                <input type="text" class="form-control" id="zipInput" aria-label="Zip">
-            </div>
-        </div>
-        <div class="row g-3">
-            <div class="col-md-6">
-                <label for="firsnameInput" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="cityInput" aria-label="City">
-            </div>
-            <div class="col-md-6">
-                <label for="lastnameInput" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="stateInput" aria-label="State">
-            </div>
-
-            <div class="row g-3 align-items-end"> <!-- Ensures alignment and spacing -->
-                <div class="col-md-6">
-                    <label for="cityInput" class="form-label">City</label>
-                    <input type="text" class="form-control" id="cityInput" placeholder="City">
+    <div class="container my-5">
+        <div class="card">
+            <div class="card-body">
+                <!-- Heading Row -->
+                <div class="row bg-light mb-3"> <!-- Applied bg-light to the entire row -->
+                    <div class="col">
+                        <h1>Payment Form Example</h1>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <label for="stateSelect" class="form-label">State</label>
-                    <select id="stateSelect" class="form-select">
-                        <option selected>Pick a state...</option>
-                        <option value="AL">Alabama</option>
-                        <option value="AK">Alaska</option>
-                        <!-- Add other states as needed -->
-                    </select>
+                <!-- Red Background Row -->
+                <div class="row red-background custom-row mb-3">
+                    <!-- Corrected class name to match the defined style -->
+                    <div class="col">
+                        <h4>Some Fields are missing</h4>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <label for="postalCodeInput" class="form-label">Postal Code</label>
-                    <input type="text" class="form-control" id="postalCodeInput" placeholder="Postal Code">
+                <div class="row g-3 custom-row mb-3">
+                    <div class="col-md-5">
+                        <label for="cardInput" class="form-label">Card #</label>
+                        <input type="text" class="form-control" id="cityInput" aria-label="City">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="cvcInput" class="form-label">CVC #</label>
+                        <input type="text" class="form-control" id="stateInput" aria-label="State">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="amountInput" class="form-label">Amount</label>
+                        <input type="text" class="form-control" id="zipInput" aria-label="Zip">
+                    </div>
                 </div>
-            </div>
+                <div class="row g-3 custom-row">
+                    <div class="col-md-6">
+                        <label for="firsnameInput" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="cityInput" aria-label="City">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastnameInput" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="stateInput" aria-label="State">
+                    </div>
 
-            <div class="row g-3">
-                <!-- Credit Card Field Column -->
-                <div class="col-md-6">
-                    <p class="form-label mb-3">We Accept......</p>
-                    <form>
-                        <input class="form-check-input" type="radio" name="creditCardType" id="visa" value="Visa">
-                        <label class="form-check-label" for="visa">Visa</label>
+                    <div class="row g-3  align-items-end"> <!-- Ensures alignment and spacing -->
+                        <div class="col-md-6">
+                            <label for="cityInput" class="form-label">City</label>
+                            <input type="text" class="form-control" id="cityInput">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="stateSelect" class="form-label">State</label>
+                            <select id="stateSelect" class="form-select">
+                                <option selected>Pick a state...</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
 
-                        <input class="form-check-input" type="radio" name="creditCardType" id="mastercard"
-                            value="MasterCard">
-                        <label class="form-check-label" for="mastercard">MasterCard</label>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="postalCodeInput" class="form-label">Postal Code</label>
+                            <input type="text" class="form-control" id="postalCodeInput">
+                        </div>
+                    </div>
 
-                        <input class="form-check-input" type="radio" name="creditCardType" id="amex"
-                            value="American Express">
-                        <label class="form-check-label" for="amex">American Express</label>
+                    <div class="row g-3 custom-row">
+                        <!-- Credit Card Field Column -->
+                        <div class="col-md-6">
+                            <p class="form-label mb-3">We Accept......</p>
+                            <form>
+                                <input class="form-check-input" type="radio" name="creditCardType" id="visa"
+                                    value="Visa">
+                                <label class="form-check-label" for="visa">Visa</label>
 
-                        <input class="form-check-input" type="radio" name="creditCardType" id="discover"
-                            value="Discover">
-                        <label class="form-check-label" for="discover">Discover</label>
-                    </form>
-                </div>
-                <!-- Comment Box Column -->
-                <div class="col-md-6 ">
-                    <div class="mb-3">
-                        <label for="amountInput" class="form-label">Message</label>
-                        <textarea class="form-control" id="commentBox" rows="5"
-                            placeholder="Enter your comments here"></textarea>
-                        <label for="commentBox" class="form-label">Add any notes here</label>
+                                <input class="form-check-input" type="radio" name="creditCardType" id="mastercard"
+                                    value="MasterCard">
+                                <label class="form-check-label" for="mastercard">MasterCard</label>
+
+                                <input class="form-check-input" type="radio" name="creditCardType" id="amex"
+                                    value="American Express">
+                                <label class="form-check-label" for="amex">American Express</label>
+
+                                <input class="form-check-input" type="radio" name="creditCardType" id="discover"
+                                    value="Discover">
+                                <label class="form-check-label" for="discover">Discover</label>
+                            </form>
+                        </div>
+                        <!-- Comment Box Column -->
+                        <div class="col-md-6 ">
+                            <div class="mb-3">
+                                <label for="amountInput" class="form-label">Message</label>
+                                <textarea class="form-control" id="commentBox" rows="5"
+                                    placeholder="Enter your comments here"></textarea>
+                                <label for="commentBox" class="form-label">Add any notes here</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <button type="button" class="btn btn-secondary me-2">Cancel</button>
+                            <button type="button" class="btn btn-primary">Send</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 d-flex justify-content-end">
-                    <button type="button" class="btn btn-secondary me-2">Cancel</button>
-                    <button type="button" class="btn btn-primary">Send</button>
-                </div>
-            </div>
-
         </div>
-
 
     </div>
 
