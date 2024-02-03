@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Your Project Title</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .red-background {
+            background-color: #ffcccc;
+            /* Adjusted red background */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Heading Row -->
+        <div class="row bg-light mb-3"> <!-- Applied bg-light to the entire row -->
+            <div class="col">
+                <h1>Payment Form Example</h1>
+            </div>
+        </div>
+        <!-- Red Background Row -->
+        <div class="row red-background mb-3"> <!-- Corrected class name to match the defined style -->
+            <div class="col">
+                <p>Some Fields are missing</p>
+            </div>
+        </div>
+        <div class="row g-3 mb-3">
+            <div class="col-md-5">
+                <label for="cardInput" class="form-label">Card #</label>
+                <input type="text" class="form-control" id="cityInput" aria-label="City">
+            </div>
+            <div class="col-md-3">
+                <label for="cvcInput" class="form-label">CVC #</label>
+                <input type="text" class="form-control" id="stateInput" aria-label="State">
+            </div>
+            <div class="col-md-4">
+                <label for="amountInput" class="form-label">Amount</label>
+                <input type="text" class="form-control" id="zipInput" aria-label="Zip">
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="firsnameInput" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="cityInput" aria-label="City">
+            </div>
+            <div class="col-md-6">
+                <label for="lastnameInput" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="stateInput" aria-label="State">
+            </div>
+
+            <div class="row g-3 align-items-end"> <!-- Ensures alignment and spacing -->
+                <div class="col-md-6">
+                    <label for="cityInput" class="form-label">City</label>
+                    <input type="text" class="form-control" id="cityInput" placeholder="City">
+                </div>
+                <div class="col-md-3">
+                    <label for="stateSelect" class="form-label">State</label>
+                    <select id="stateSelect" class="form-select">
+                        <option selected>Pick a state...</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <!-- Add other states as needed -->
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="postalCodeInput" class="form-label">Postal Code</label>
+                    <input type="text" class="form-control" id="postalCodeInput" placeholder="Postal Code">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row g-3 align-items-end">
+                    <!-- Credit Card Field Column -->
+                    <div class="col-md-6">
+                        <label class="form-label">Credit Card Type</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="creditCardType" id="visa" value="Visa">
+                            <label class="form-check-label" for="visa">Visa</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="creditCardType" id="mastercard"
+                                value="MasterCard">
+                            <label class="form-check-label" for="mastercard">MasterCard</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="creditCardType" id="amex"
+                                value="American Express">
+                            <label class="form-check-label" for="amex">American Express</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="creditCardType" id="discover"
+                                value="Discover">
+                            <label class="form-check-label" for="discover">Discover</label>
+                        </div>
+                    </div>
+
+                    <!-- Comment Box Column -->
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="amountInput" class="form-label">Message</label>
+                            <textarea class="form-control" id="commentBox" rows="5"
+                                placeholder="Enter your comments here"></textarea>
+                            <label for="commentBox" class="form-label">Add any notes here</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-end">
+                      <button type="button" class="btn btn-secondary me-2">Cancel</button>
+                      <button type="button" class="btn btn-primary">Send</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k3kkbQ1lcw+1M0CLYzwB+7BO3IvmYWT9f7gFv76iLg5bcw5pZpFIdUcbzBfIWgVK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
